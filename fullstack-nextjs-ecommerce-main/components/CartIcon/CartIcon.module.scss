@@ -1,0 +1,43 @@
+@use "@/styles/variables" as v;
+@use "@/styles/breakpoints.scss" as b;
+
+.cartIcon {
+	display: flex;
+	gap: 0.3rem;
+	@include b.breakpoint(md) {
+		align-items: center;
+	}
+
+	&__price {
+		font-size: 1rem;
+		@include b.breakpoint(md) {
+			font-size: 1.1rem;
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		svg {
+			font-size: 1.2rem;
+			@include b.breakpoint(md) {
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	&__badge {
+		position: absolute;
+		top: -11px;
+		right: -13px;
+		width: 1.2rem;
+		height: 1.2rem;
+		font-size: 0.9rem;
+		background-color: v.$color-primary;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+	}
+}

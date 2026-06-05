@@ -1,0 +1,11 @@
+@use "@/styles/mixins.scss" as m;
+@use "@/styles/breakpoints.scss" as b;
+@use "@/styles/variables" as v;
+
+.column {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 20px;
+	column-gap: 1rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #ccc;
+}
